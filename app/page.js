@@ -64,7 +64,7 @@ export default function Home() {
 
       <section className="section container">
         <h2 className="section-title">📱 Our 20 Instagram Accounts</h2>
-        <p style={{ color: "#8aaa90", marginBottom: 20 }}>Follow us for daily reels, clips, and updates!</p>
+        <p style={{ color: "var(--muted)", marginBottom: 20 }}>Follow us for daily reels, clips, and updates!</p>
         <div className="insta-grid">
           {INSTA_ACCOUNTS.map((a) => (
             <a key={a} href={`https://instagram.com/${a.replace("@","")}`} target="_blank" className="insta-pill">

@@ -15,7 +15,7 @@ function ShopContent() {
   return (
     <>
       <h2 className="section-title">🛍️ OmniHub Store</h2>
-      <p style={{ color: "#8aaa90", marginBottom: 20 }}>Clothing shipped across India + instant digital products.</p>
+      <p style={{ color: "var(--muted)", marginBottom: 20 }}>Clothing shipped across India + instant digital products.</p>
 
       <div style={{ marginBottom: 24, display: "flex", gap: 8, flexWrap: "wrap" }}>
         <Link href="/shop" className={current === "All" ? "btn" : "btn btn-outline"} style={{ width: "auto" }}>All</Link>

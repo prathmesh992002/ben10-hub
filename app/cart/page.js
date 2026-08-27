@@ -21,7 +21,7 @@ export default function Cart() {
                 <img src={i.img} alt={i.name} />
                 <div>
                   <div style={{ fontWeight: 700 }}>{i.name}</div>
-                  <div style={{ color: "var(--green)", fontWeight: 800 }}>₹{i.price}</div>
+                  <div style={{ color: "var(--blue)", fontWeight: 800 }}>₹{i.price}</div>
                 </div>
                 <div className="qty-control">
                   <button onClick={() => dec(i.id)}>−</button>
@@ -35,12 +35,12 @@ export default function Cart() {
           <div className="summary">
             <h3>Order Summary</h3>
             <div className="row"><span>Subtotal</span><span>₹{total}</span></div>
-            <div className="row"><span>Shipping</span><span style={{ color: "var(--green)" }}>FREE</span></div>
+            <div className="row"><span>Shipping</span><span style={{ color: "var(--blue)" }}>FREE</span></div>
             <div className="row total"><span>Total</span><span>₹{total}</span></div>
             <button className="btn" style={{ marginTop: 16 }} onClick={() => alert("Order placed! You'll receive confirmation on WhatsApp.")}>
               Place Order
             </button>
-            <p style={{ fontSize: ".8rem", color: "#8aaa90", marginTop: 12, textAlign: "center" }}>Cash on Delivery available</p>
+            <p style={{ fontSize: ".8rem", color: "var(--muted)", marginTop: 12, textAlign: "center" }}>Cash on Delivery available</p>
           </div>
         </div>
       )}

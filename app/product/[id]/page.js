@@ -21,22 +21,22 @@ export default function Product({ params }) {
       <div>
         <span className="tag">{product.tag}</span>
         <h1 style={{ fontSize: "2.2rem", margin: "12px 0" }}>{product.name}</h1>
-        <div style={{ fontSize: "2rem", color: "var(--green)", fontWeight: 800, marginBottom: 16 }}>₹{product.price}</div>
-        <p style={{ color: "#8aaa90", marginBottom: 24, lineHeight: 1.6 }}>{product.desc}</p>
+        <div style={{ fontSize: "2rem", color: "var(--blue)", fontWeight: 800, marginBottom: 16 }}>₹{product.price}</div>
+        <p style={{ color: "var(--muted)", marginBottom: 24, lineHeight: 1.6 }}>{product.desc}</p>
         <div style={{ display: "flex", gap: 12 }}>
           <button onClick={() => { add(product); router.push("/cart"); }} className="btn">Buy Now</button>
           <button onClick={() => add(product)} className="btn btn-outline">Add to Cart</button>
         </div>
-        <div style={{ marginTop: 32, padding: 16, background: "var(--dark)", borderRadius: 10 }}>
+        <div style={{ marginTop: 32, padding: 16, background: "var(--card)", borderRadius: 10, border: "1px solid var(--border)" }}>
           {product.category === "Digital" ? (
             <>
               <h3 style={{ marginBottom: 8 }}>⚡ Instant Delivery</h3>
-              <p style={{ color: "#8aaa90" }}>Download link sent to your email right after payment.</p>
+              <p style={{ color: "var(--muted)" }}>Download link sent to your email right after payment.</p>
             </>
           ) : (
             <>
               <h3 style={{ marginBottom: 8 }}>🚚 Shipping</h3>
-              <p style={{ color: "#8aaa90" }}>Free shipping across India. Delivered in 5-7 days.</p>
+              <p style={{ color: "var(--muted)" }}>Free shipping across India. Delivered in 5-7 days.</p>
             </>
           )}
         </div>
