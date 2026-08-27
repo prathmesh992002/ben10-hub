@@ -13,6 +13,7 @@ export default function Navbar() {
           <Link href="/episodes">Reels</Link>
           <Link href="/shop?cat=Clothing">Clothing</Link>
           <Link href="/shop?cat=Digital">Digital</Link>
+          <Link href="/downloads">Downloads</Link>
           <Link href="/accounts">Instagram</Link>
           <Link href="/cart" className="cart-btn">
             Cart {count > 0 && <span className="cart-count">{count}</span>}
