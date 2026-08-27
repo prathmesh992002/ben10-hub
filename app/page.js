@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EPISODES, PRODUCTS, INSTA_ACCOUNTS } from "@/lib/data";
+import { TRENDING, PRODUCTS, INSTA_ACCOUNTS } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -14,19 +14,20 @@ export default function Home() {
       <section className="section container">
         <h2 className="section-title">🔥 Trending Episodes</h2>
         <div className="grid">
-          {EPISODES.slice(0, 6).map((e) => (
-            <Link href={e.url} target="_blank" key={e.id} className="card">
+          {TRENDING.map((e) => (
+            <a href={e.url} target="_blank" rel="noopener noreferrer" key={e.id} className="card">
               <img src={e.img} alt={e.title} />
               <div className="card-body">
-                <span className="tag">S{e.season}</span>
-                <div className="card-title">{e.title}</div>
-                <div className="card-meta">Episode {e.id}</div>
+                <span className="tag">{e.series} · S{e.season} · Ep {e.episode}</span>
+                <div className="card-meta">{e.desc}</div>
+                <div className="card-title" style={{ marginTop: 8 }}>{e.title}</div>
+                <div style={{ color: "#8aaa90", fontSize: ".85rem", marginTop: 6 }}>▶ Watch Reel →</div>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
         <div style={{ textAlign: "center", marginTop: 24 }}>
-          <Link href="/episodes" className="btn btn-outline">View All 20 Episodes →</Link>
+          <Link href="/episodes" className="btn btn-outline">View All Episodes →</Link>
         </div>
       </section>
 
