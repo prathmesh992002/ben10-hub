@@ -103,6 +103,27 @@ nav {
   font-weight: 700; margin-bottom: 6px;
 }
 
+.reel-thumb {
+  position: relative;
+  aspect-ratio: 9/16;
+  background: radial-gradient(circle at 30% 20%, #0d3d1a, #000 70%);
+  display: flex; align-items: center; justify-content: center;
+}
+.reel-play {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: rgba(0,212,90,0.9);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; color: #000;
+  box-shadow: 0 0 30px rgba(0,212,90,0.6);
+  animation: pulse 1.8s infinite;
+}
+.reel-play span { transform: translateX(2px); }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0,212,90,0.6); }
+  70% { box-shadow: 0 0 0 20px rgba(0,212,90,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,212,90,0); }
+}
+
 .insta-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));

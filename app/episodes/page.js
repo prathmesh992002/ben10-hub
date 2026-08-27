@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { EPISODES } from "@/lib/data";
+import VideoCard from "../components/VideoCard";
 
 export default function Episodes() {
   const [series, setSeries] = useState("all");
@@ -11,7 +12,7 @@ export default function Episodes() {
     <section className="section container">
       <h2 className="section-title">📺 All Ben 10 Episodes</h2>
       <p style={{ color: "#8aaa90", marginBottom: 20 }}>
-        Click any episode to watch the reel on Instagram.
+        Click play to watch the reel right here on the site.
       </p>
       <div style={{ marginBottom: 24, display: "flex", gap: 8, flexWrap: "wrap" }}>
         <button onClick={() => setSeries("all")} className={series === "all" ? "btn" : "btn btn-outline"} style={{ width: "auto" }}>All</button>
@@ -23,15 +24,7 @@ export default function Episodes() {
       </div>
       <div className="grid">
         {filtered.map(e => (
-          <a key={e.id} href={e.url} target="_blank" rel="noopener noreferrer" className="card">
-            <img src={e.img} alt={e.title} />
-            <div className="card-body">
-              <span className="tag">{e.series} · S{e.season} · Ep {e.episode}</span>
-              <div className="card-meta">{e.desc}</div>
-              <div className="card-title" style={{ marginTop: 8 }}>{e.title}</div>
-              <div style={{ color: "#8aaa90", fontSize: ".85rem", marginTop: 6 }}>▶ Watch on Instagram →</div>
-            </div>
-          </a>
+          <VideoCard key={e.id} e={e} />
         ))}
       </div>
     </section>

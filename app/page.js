@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { TRENDING, PRODUCTS, INSTA_ACCOUNTS } from "@/lib/data";
+import VideoCard from "./components/VideoCard";
 
 export default function Home() {
   return (
@@ -15,15 +16,7 @@ export default function Home() {
         <h2 className="section-title">🔥 Trending Episodes</h2>
         <div className="grid">
           {TRENDING.map((e) => (
-            <a href={e.url} target="_blank" rel="noopener noreferrer" key={e.id} className="card">
-              <img src={e.img} alt={e.title} />
-              <div className="card-body">
-                <span className="tag">{e.series} · S{e.season} · Ep {e.episode}</span>
-                <div className="card-meta">{e.desc}</div>
-                <div className="card-title" style={{ marginTop: 8 }}>{e.title}</div>
-                <div style={{ color: "#8aaa90", fontSize: ".85rem", marginTop: 6 }}>▶ Watch Reel →</div>
-              </div>
-            </a>
+            <VideoCard key={e.id} e={e} />
           ))}
         </div>
         <div style={{ textAlign: "center", marginTop: 24 }}>
