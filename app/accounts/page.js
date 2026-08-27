@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useCart } from "../context";
-import { INSTA_ACCOUNTS } from "../lib/data";
+import { INSTA_ACCOUNTS } from "@/lib/data";
 
 export default function Accounts() {
   return (

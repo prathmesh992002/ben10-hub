@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EPISODES, PRODUCTS, INSTA_ACCOUNTS } from "../lib/data";
+import { EPISODES, PRODUCTS, INSTA_ACCOUNTS } from "@/lib/data";
 
 export default function Home() {
   return (

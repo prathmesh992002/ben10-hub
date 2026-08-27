@@ -1,6 +1,6 @@
 "use client";
 import { use } from "react";
-import { PRODUCTS } from "../../lib/data";
+import { PRODUCTS } from "@/lib/data";
 import { useCart } from "../../context";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

@@ -1,6 +1,6 @@
 "use client";
 import { useCart } from "../context";
-import { PRODUCTS } from "../lib/data";
+import { PRODUCTS } from "@/lib/data";
 import Link from "next/link";
 
 export default function Shop() {

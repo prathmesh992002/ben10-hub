@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { EPISODES } from "../lib/data";
+import { EPISODES } from "@/lib/data";
 
 export default function Episodes() {
   const [season, setSeason] = useState("all");
