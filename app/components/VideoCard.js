@@ -18,6 +18,16 @@ export default function VideoCard({ e }) {
         <span className="tag">{e.series} · S{e.season} · Ep {e.episode}</span>
         <div className="card-meta">{e.desc}</div>
         <div className="card-title" style={{ marginTop: 8 }}>{e.title}</div>
+        {e.ig && (
+          <a
+            href={e.ig}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ig-link"
+          >
+            Watch more reels → {e.igHandle || ""}
+          </a>
+        )}
       </div>
     </div>
   );

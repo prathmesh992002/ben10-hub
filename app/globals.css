@@ -103,6 +103,15 @@ nav {
   font-weight: 700; margin-bottom: 6px;
 }
 
+.ig-link {
+  display: inline-flex; align-items: center; gap: 4px; margin-top: 10px;
+  background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+  color: #fff; padding: 6px 12px; border-radius: 20px;
+  font-size: 0.8rem; font-weight: 700;
+  transition: transform .2s;
+}
+.ig-link:hover { transform: scale(1.05); }
+
 .reel-thumb {
   position: relative;
   aspect-ratio: 9/16;
