@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Ben10 Hub - Episodes, Clips & Merch",
-  description: "Watch Ben 10 full episodes from 20+ Instagram accounts and shop official Ben 10 merchandise.",
+  title: "OmniHub - Digital Products, Clothing & Reels",
+  description: "Shop digital products and clothing, and watch trending reels all in one hub.",
 };
 
 import "./globals.css";

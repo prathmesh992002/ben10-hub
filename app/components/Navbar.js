@@ -7,11 +7,12 @@ export default function Navbar() {
   return (
     <nav>
       <div className="container nav-inner">
-        <Link href="/" className="logo">BEN<span>10</span> HUB</Link>
+        <Link href="/" className="logo">OMNI<span>HUB</span></Link>
         <div className="nav-links">
           <Link href="/">Home</Link>
-          <Link href="/episodes">Episodes</Link>
-          <Link href="/shop">Shop</Link>
+          <Link href="/episodes">Reels</Link>
+          <Link href="/shop?cat=Clothing">Clothing</Link>
+          <Link href="/shop?cat=Digital">Digital</Link>
           <Link href="/accounts">Instagram</Link>
           <Link href="/cart" className="cart-btn">
             Cart {count > 0 && <span className="cart-count">{count}</span>}

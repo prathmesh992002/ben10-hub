@@ -28,8 +28,17 @@ export default function Product({ params }) {
           <button onClick={() => add(product)} className="btn btn-outline">Add to Cart</button>
         </div>
         <div style={{ marginTop: 32, padding: 16, background: "var(--dark)", borderRadius: 10 }}>
-          <h3 style={{ marginBottom: 8 }}>🚚 Shipping</h3>
-          <p style={{ color: "#8aaa90" }}>Free shipping across India. Delivered in 5-7 days via Meesho/Myntra.</p>
+          {product.category === "Digital" ? (
+            <>
+              <h3 style={{ marginBottom: 8 }}>⚡ Instant Delivery</h3>
+              <p style={{ color: "#8aaa90" }}>Download link sent to your email right after payment.</p>
+            </>
+          ) : (
+            <>
+              <h3 style={{ marginBottom: 8 }}>🚚 Shipping</h3>
+              <p style={{ color: "#8aaa90" }}>Free shipping across India. Delivered in 5-7 days.</p>
+            </>
+          )}
         </div>
       </div>
     </section>

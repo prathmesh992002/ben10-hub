@@ -10,9 +10,9 @@ export default function Episodes() {
 
   return (
     <section className="section container">
-      <h2 className="section-title">📺 All Ben 10 Episodes</h2>
+      <h2 className="section-title">🎬 Trending Reels</h2>
       <p style={{ color: "#8aaa90", marginBottom: 20 }}>
-        Click play to watch the reel right here on the site.
+        Click play to watch the reel right here. Click the box below a reel to open it on Instagram.
       </p>
       <div style={{ marginBottom: 24, display: "flex", gap: 8, flexWrap: "wrap" }}>
         <button onClick={() => setSeries("all")} className={series === "all" ? "btn" : "btn btn-outline"} style={{ width: "auto" }}>All</button>

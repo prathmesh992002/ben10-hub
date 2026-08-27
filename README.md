@@ -1,6 +1,6 @@
-# Ben10 Hub - Free E-commerce + Content Site
+# OmniHub - Free E-commerce + Content Site
 
-Next.js site for Ben 10 fan content (20 Instagram accounts) + merch dropshipping.
+Next.js store for trending reels (20 Instagram accounts), clothing, and digital products.
 
 ## Run locally
 ```bash
@@ -15,12 +15,18 @@ npm run dev
 4. Done! Free URL: `your-project.vercel.app`
 
 ## Features
-- 20 episode links to Instagram content
-- 6 sample merch products with cart
+- Auto-playing reels with links back to Instagram (boost reach)
+- 👕 Clothing products with cart
+- 💾 Digital products (instant delivery)
 - 20 Instagram account links
 - Mobile responsive
 - LocalStorage cart (no backend needed)
 
 ## Customization
-- Edit `lib/data.js` for real episode URLs and Myntra/Meesho product links
-- Replace placeholder images with your own (use `/public` folder)
+- Edit `lib/data.js`:
+  - `EPISODES` / `TRENDING` for reels
+  - `CLOTHING` for clothing products
+  - `DIGITAL_PRODUCTS` for digital products
+  - `INSTA_ACCOUNTS` for your handles
+- Replace placeholder images with your own (put files in `/public`)
+- Reels videos go in `/public/reels/` as `.mp4`
