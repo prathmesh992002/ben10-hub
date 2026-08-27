@@ -63,18 +63,6 @@ export default function Home() {
       </section>
 
       <section className="section container">
-        <h2 className="section-title">⬇️ Full Series & Movie Downloads</h2>
-        <p style={{ color: "var(--muted)", marginBottom: 20 }}>
-          Every Ben 10 series and movie — classic, Alien Force, Ultimate Alien & Omniverse in multiple qualities.
-        </p>
-        <div style={{ textAlign: "center" }}>
-          <Link href="/downloads" className="btn" style={{ width: "auto", padding: "14px 40px" }}>
-            Browse All Downloads →
-          </Link>
-        </div>
-      </section>
-
-      <section className="section container">
         <h2 className="section-title">📱 Our 20 Instagram Accounts</h2>
         <p style={{ color: "var(--muted)", marginBottom: 20 }}>Follow us for daily reels, clips, and updates!</p>
         <div className="insta-grid">

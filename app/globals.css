@@ -191,58 +191,6 @@ footer p { color: #94a3b8; }
 .summary .row { display: flex; justify-content: space-between; margin-bottom: 8px; color: var(--muted); }
 .summary .total { font-size: 1.4rem; color: var(--blue); font-weight: 800; margin-top: 12px; }
 
-.dl-table {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-}
-.dl-row {
-  display: grid;
-  grid-template-columns: 2.2fr 0.8fr 1fr 1.4fr 1.2fr 0.8fr 0.9fr;
-  gap: 12px;
-  align-items: center;
-  padding: 14px 16px;
-  font-size: 0.9rem;
-  border-bottom: 1px solid var(--border);
-  color: var(--text);
-}
-.dl-row:last-child { border-bottom: none; }
-.dl-head {
-  background: var(--blue);
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-.dl-title { font-weight: 700; color: var(--dark); }
-.dl-year { color: var(--muted); font-weight: 400; margin-left: 4px; }
-.dl-pending {
-  color: var(--muted);
-  font-size: 0.8rem;
-  font-style: italic;
-}
-
-@media (max-width: 900px) {
-  .dl-table { display: block; }
-  .dl-row {
-    grid-template-columns: 1fr 1fr;
-    gap: 6px 12px;
-    padding: 12px;
-  }
-  .dl-head { display: none; }
-  .dl-row > div::before {
-    content: attr(data-label);
-    font-weight: 700;
-    color: var(--blue);
-    display: block;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-  }
-}
-
 @media (max-width: 768px) {
   .nav-links a { display: none; }
   .nav-links a.cart-btn { display: inline-block; }
